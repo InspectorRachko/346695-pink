@@ -1,94 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link href="css\style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Пинк</title>
 </head>
+
 <body>
     <header class="page-header container">
-        <nav class="main-nav">
-            <button class="main-nav__button" type="button"></button>
-            <p class="main-nav__title">Pink</p>
-            <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Pink">
-            <ul>
+        <nav class="main-nav main-nav--opened">
+            <a href="index.html" class="logo page-header__logo">
+                <img src="http://placehold.it/30x30" class="logo__img logo__img--header">
+            </a>
+            <a href="index.html" class="page-header__title visually-hidden">Pink</a>
+            <button class="main-nav__toggle" type="button"></button>
+            <ul class="main-nav__list">
                 <li>
-                    <a href="#">Главная</a>
+                    <a href="index.html" class="main-nav__item main-nav__active">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Фотографии</a>
+                    <a class="main-nav__item" href="photo.html">Фотографии</a>
                 </li>
                 <li>
-                    <a href="#">Конкурс</a>
+                    <a class="main-nav__item">Конкурс</a>
                 </li>
                 <li>
-                    <a href="#">HTML Academy</a>
+                    <a class="main-nav__item" href="https://htmlacademy.ru">HTML Academy</a>
                 </li>
             </ul>
         </nav>
+        <section class="contest-intro container">
+            <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </section>
     </header>
-    <section class="contest-intro container">
-        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </section>
+    <p class="contest-form__description contest-form__description--1">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="contest-form__description contest-form__description--2">Пожалуйста, заполните форму ниже:
+        </span
+    </p>
     <form action="https://echo.htmlacademy.ru/" method="post" class="contest-form container">
-        <p class="contest-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <fieldset class="contest-form__name">
-            <label class="red-label" for="surname">Фамилия:</label>
-            <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
-            <label class="red-label" for="name">Имя:</label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
-            <label class="red-label" for="patronymic">Отчество:</label>
-            <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество">
+            <div class="flexbug">
+                <label class="pink" for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+                <label class="pink" for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+                <label class="pink" for="patronymic">Отчество:</label>
+                <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </div>
         </fieldset>
         <fieldset class="contest-form__achievments">
-            <p>Ваши безбашенные достижения в путешествии</p>
-            <input type="checkbox" name="achievments" id="shark" value="shark" class="checkbox" checked>
-            <label for="shark">Сделал селфи с акулой</label>
-            <input type="checkbox" name="achievments" id="sunburn" value="sunburn" class="checkbox" checked>
-            <label for="sunburn">Обгорел на пляже</label>
-            <input type="checkbox" name="achievments" id="norris" value="norris" class="checkbox">
-            <label for="norris">Видел Чака Норриса</label>
-            <input type="checkbox" name="achievments" id="souvenirs" value="souvenirs" class="checkbox">
-            <label for="souvenirs">Накупил сувениров</label>
-            <input type="checkbox" name="achievments" id="tower" value="tower" class="checkbox" checked>
-            <label for="tower">Удержал башню</label>
-            <input type="checkbox" name="achievments" id="hotel" value="hotel" class="checkbox">
-            <label for="hotel">Разгромил отель</label>
+            <legend class="pink">Ваши безбашенные достижения в путешествии</legend>
+            <div class="flexbug">
+                <input type="checkbox" name="achievments" id="shark" value="shark" class="checkbox" checked>
+                <label for="shark">Сделал селфи с акулой</label>
+                <input type="checkbox" name="achievments" id="sunburn" value="sunburn" class="checkbox" checked>
+                <label for="sunburn">Обгорел на пляже</label>
+                <input type="checkbox" name="achievments" id="norris" value="norris" class="checkbox">
+                <label for="norris">Видел Чака Норриса</label>
+                <input type="checkbox" name="achievments" id="souvenirs" value="souvenirs" class="checkbox">
+                <label for="souvenirs">Накупил сувениров</label>
+                <input type="checkbox" name="achievments" id="tower" value="tower" class="checkbox" checked>
+                <label for="tower">Удержал башню</label>
+                <input type="checkbox" name="achievments" id="hotel" value="hotel" class="checkbox">
+                <label for="hotel">Разгромил отель</label>
+            </div>
         </fieldset>
         <fieldset class="contest-form__tel-n-mail">
-            <label class="red-label" for="tel">Номер телефона</label>
-            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-            <label class="red-label" for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+            <legend class="pink">Контактная информация</legend>
+            <div class="flexbug">
+                <label class="pink" for="tel">Номер телефона</label>
+                <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                <label class="pink" for="email">Адрес почты</label>
+                <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+            </div>
         </fieldset>
         <fieldset class="contest-form__platform">
-            <p>С каким приложением путешествовали?</p>
-            <input type="radio" name="platform" id="ios" value="ios" checked>
-            <label for="ios">Pink для iOS</label>
-            <input type="radio" name="platform" id="android" value="android">
-            <label for="android">Pink на Android</label>
-            <input type="radio" name="platform" id="windows" value="windows">
-            <label for="windows">Windows Phone</label>
+            <legend class="pink">С каким приложением путешествовали?</legend>
+            <div class="flexbug">
+                <input type="radio" name="platform" id="ios" value="ios" checked>
+                <label for="ios">Pink для iOS</label>
+                <input type="radio" name="platform" id="android" value="android">
+                <label for="android">Pink на Android</label>
+                <input type="radio" name="platform" id="windows" value="windows">
+                <label for="windows">Windows Phone</label>
+            </div>
         </fieldset>
         <fieldset class="contest-form__coolstory">
-            <label class="red-label" for="coolstory">Опишите свои эмоции</label>
+            <legend class="pink">Опишите свои эмоции</legend>
             <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" id="coolstory" name="coolstory" rows="9"></textarea>
         </fieldset>
-        <input class="contest-form__submit" type="submit" value="Отправить форму">
-        <span class="star">*</span>
-        <span>— обязательные поля</span>
-    </form>
-    <footer class="page-footer container">
-        <img src="http://placehold.it/150x100" alt="" class="page-footer__logo">
-        <h4 class="page-footer__title">Pink</h4>
-        <section class="page-footer__social">
-            <a href="">Twitter</a>
-            <a href="">Facebook</a>
-            <a href="">Youtube</a>
-        </section>
-        <section class="page-footer__copyright">
-            <p>Разработано</p>
-            <a href="htmlacademy.ru"><img src="http://placehold.it/150x100" alt=""></a>
-        </section>
-    </footer>
+        <div class="contest-form__bottom">
+            <input class="contest-form__submit" type="submit" value="Отправить форму">
+            <span class="contest-form__footnote">*— обязательные поля</span>
+        </div>
+        </form>
+        <footer class="page-footer container">
+            <img src="http://placehold.it/150x100" alt="" class="page-footer__logo">
+            <h4 class="page-footer__title">Pink</h4>
+            <section class="page-footer__social">
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+                <a href="">Youtube</a>
+            </section>
+            <section class="page-footer__copyright">
+                <p>Разработано</p>
+                <a href="htmlacademy.ru"><img src="http://placehold.it/150x100" alt=""></a>
+            </section>
+        </footer>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
