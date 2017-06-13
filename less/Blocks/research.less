@@ -1,0 +1,40 @@
+.research {
+    display: none;
+    background-color: white;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .research {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+    
+    .research__descr h2 {
+        width: 170px;
+        color: black;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .research__descr p {
+        width: 296px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;  
+    }
+    .research__descr a {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left; 
+        color: @color-pink;
+        text-decoration: underline;
+    }
+}
+
+@media (min-width: 960px) {}

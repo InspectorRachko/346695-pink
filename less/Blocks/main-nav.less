@@ -1,0 +1,137 @@
+.main-nav {
+    position: relative;
+    background-color: @color-regular;
+}
+
+.main-nav__item {
+    background: @color-regular;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__list a {
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.main-nav__toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+
+.main-nav--closed .main-nav__list {
+    display: none;
+}
+
+.main-nav--closed {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__toggle {
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 10px;
+        width: 28px;
+        height: 4px;
+        background-color: #ffffff;
+    }
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    transform: none;
+}
+
+.main-nav--closed .main-nav__toggle::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0x;
+    height: 0px;
+    background-color: #ffffff;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .main-nav__toggle {
+        margin-top: 33px;
+        margin-left: 7px;
+        margin-bottom: 27px;
+    }
+}
+
+@media (min-width: 960px) {
+    .main-nav {
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .main-nav__item {
+        display: inline-block;
+        width: auto;
+    }
+    .main-nav ul {
+        display: inline-block;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-right: 58px;
+    }
+     
+    .main-nav a {
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: none;
+        font-weight: normal; 
+        }
+    .main-nav__toggle {
+        display: none;
+    }
+    .main-nav__item {
+        background: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    .main-nav--closed .main-nav__list {
+        display: inline-block;
+    }
+}

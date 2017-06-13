@@ -1,0 +1,209 @@
+.contest-form {}
+
+.contest-form__description {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contest-form__description--2 {
+    display: none;
+}
+
+.contest-form__name {
+    border: none;
+}
+
+.contest-form__name .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__achievments {
+    background-color: @bg-grey;
+    font-size: 18px;
+    border: none;
+}
+
+.contest-form__achievments .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__achievments label {
+    margin-left: 30px;
+}
+
+.contest-form__achievments legend {
+    margin-left: 30px;
+}
+
+.contest-form__tel-n-mail {
+    font-size: 18px;
+    border: none;
+}
+
+.contest-form__tel-n-mail .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__tel-n-mail legend {
+    display: none;
+}
+
+.contest-form__platform {
+    background-color: @bg-grey;
+    font-size: 18px;
+    border: none;
+}
+
+.contest-form__platform .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__coolstory {
+    font-size: 18px;
+    border: none;
+}
+
+.contest-form__coolstory .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .contest-form {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+    .contest-form__description {
+        order: 1;
+    }
+    .contest-form__description--2 {
+        order: 2;
+        display: block;
+    }
+    .contest-form__name {
+        order: 3;
+    }
+    .contest-form__name .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__platform {
+        order: 4;
+        border: 2px solid #e5e5e5;
+        background-color: transparent;
+    }
+    .contest-form__tel-n-mail {
+        order: 5;
+        border: 2px solid #e5e5e5;
+    }
+    .contest-form__tel-n-mail .flexbug {
+        flex-direction: column;
+    }
+    .contest-form__tel-n-mail input:first-of-type {
+        order: -1;
+    }
+    .contest-form__tel-n-mail label:first-of-type {
+        order: 0;
+    }
+    .contest-form__tel-n-mail input:last-of-type {
+        order: 1;
+    }
+    .contest-form__tel-n-mail label:last-of-type {
+        order: 2;
+    }
+    .contest-form__tel-n-mail legend {
+        display: block;
+    }
+    .contest-form__achievments {
+        order: 6;
+        background-color: transparent;
+        border: 2px solid #e5e5e5;
+    }
+    .contest-form__coolstory {
+        order: 7;
+        border: 2px solid #e5e5e5;
+    }
+    .contest-form__bottom {
+        order: 8;
+    }
+}
+
+@media (min-width: 960px) {
+    .contest-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__description--2 {
+        display: inline;
+    }
+    .contest-form__name {
+        width: 434px;
+    }
+    .contest-form__platform {
+        width: 434px;
+    }
+    .contest-form__tel-n-mail {
+        width: 940px;
+        margin: 0 auto;
+    }
+    .contest-form__tel-n-mail .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__tel-n-mail input:first-of-type {
+        order: -1;
+    }
+    .contest-form__tel-n-mail input:last-of-type {
+        order: 0;
+    }
+    .contest-form__tel-n-mail label:first-of-type {
+        order: 1;
+    }
+    .contest-form__tel-n-mail label:last-of-type {
+        order: 2;
+    }
+    .contest-form__achievments {
+        width: 940px;
+        margin: 0 auto;
+    }
+    .contest-form__achievments .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__coolstory {
+        width: 940px;
+        margin: 0 auto;
+    }
+}
