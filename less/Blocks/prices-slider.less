@@ -1,0 +1,122 @@
+.prices-slider {
+    box-sizing: border-box;
+    
+    
+    
+    margin-top: 158px;
+}
+
+.prices-slider li {
+    width: 280px;
+    height: 63px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+}
+
+.prices-slider__header {
+    width: 280px;
+    height: 98px;
+    background-color: @color-regular;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+}
+
+.prices-slider__header h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+.prices-slider__header span {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 88px;
+    margin-top: -23px;
+}
+
+.prices-slider__list li {
+    width: 280px;
+    height: 61px;
+    padding-left: 21px;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    
+}
+
+
+.prices-slider__base,
+.prices-slider__unlimited,
+.prices-slider__options {
+    display: none;
+}
+
+.prices-slider__base,
+.prices-slider__standart,
+.prices-slider__unlimited,
+{
+    padding: 20px;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .prices-slider {
+        background-color: #f2f2f2;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+    }
+    .prices-slider__base,
+    .prices-slider__standart,
+    .prices-slider__unlimited,
+    {
+        padding: 0px;
+    }
+    .prices-slider li {
+        width: 157px;
+        height: 49px;
+        background-color: white;
+    }
+    
+    .prices-slider__base,
+    .prices-slider__unlimited,
+    .prices-slider__options {
+        display: block;
+    }
+    
+    .prices-slider__list li {
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: none;
+    }
+    .prices-slider__item li {
+        font-size: 0;
+    }
+    
+    .prices-slider__header {
+        width: 157px;
+        height: 79px;
+    }
+    
+}
+
+@media (min-width: 960px) {
+    .prices-slider li {
+        width: 234px;
+        height: 63px;
+    }
+}

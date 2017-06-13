@@ -1,91 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link href="css\style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Пинк</title>
 </head>
+
 <body>
     <header class="page-header container">
-        <nav class="main-nav">
-            <button class="main-nav__button" type="button"></button>
-            <p class="main-nav__title">Pink</p>
-            <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Pink">
-            <ul>
+        <nav class="main-nav main-nav--opened">
+            <a href="" class="logo page-header__logo">
+                <img src="http://placehold.it/30x30" class="logo__img logo__img--header">
+            </a>
+            <a class="page-header__title visually-hidden">Pink</a>
+            <button class="main-nav__toggle" type="button"></button>
+            <ul class="main-nav__list">
                 <li>
-                    <a href="#">Главная</a>
+                    <a class="main-nav__item main-nav__active">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Фотографии</a>
+                    <a class="main-nav__item" href="photo.html">Фотографии</a>
                 </li>
                 <li>
-                    <a href="#">Конкурс</a>
+                    <a class="main-nav__item" href="form.html">Конкурс</a>
                 </li>
                 <li>
-                    <a href="#">HTML Academy</a>
+                    <a class="main-nav__item" href="https://htmlacademy.ru">HTML Academy</a>
                 </li>
             </ul>
         </nav>
-    </header>
-    <section class="main_intro container">
-        <img src="http://placehold.it/150x100" alt="Pink">
-    </section>
-    <section class="download container">
-        <a href="#" class="btn download__button">Скачать приложение</a>
-        <section class="download__platforms">
-            <img src="http://placehold.it/150x100" alt="Apple" class="download__icon">
-            <img src="http://placehold.it/150x100" alt="Android" class="download__icon">
-            <img src="http://placehold.it/150x100" alt="Windows" class="download__icon">
+        <section class="intro container">
+            <img src="img/iphone-hand-mobile@1x.png" class="intro__picture" width="258" height="286" alt="Pink">
+            <section class="download">
+                <b class="download__slogan visually-hidden"> Взгляните на жизнь иначе!</b>
+                <a href="#" class="btn download__link">Скачать приложение</a>
+                <ul class="download__list clear-ul">
+                    <li>
+                        <a href="#" class="download__platform"><img src="http://placehold.it/50x60" alt="Apple" width="50" height="60" class="download__icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="download__platform"><img src="http://placehold.it/50x60" alt="Android" width="50" height="60" class="download__icon"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="download__platform"><img src="http://placehold.it/50x60" alt="Windows" width="50" height="60" class="download__icon"></a>
+                    </li>
+                </ul>
+                <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </section>
         </section>
-        <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
+    </header>
     <section class="information container">
-        <h2>Устали от серости мегаполиса?</h2>
-        <h2>Нам есть, что вам предложить!</h2>
-        <h3>Поднимает настроение</h3>
-        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h3>Меняет мир вокруг</h3>
-        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h3>Заводит новых друзей</h3>
-        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        <img src="http://placehold.it/150x100" alt="Всем привет!">
-    </section>
-    <section class="reviews container">
-        <div class="reviews__slider">
-            <div class="reviews-slide-1">
-                <h3>Николай Петров</h3>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <div class="information__slogan">
+            <b>Устали от серости мегаполиса?</b>
+            <b>Нам есть, что вам предложить!</b>
+        </div>
+        <div class="information__items">
+            <div class="information__pictures">
+                <img src="img/iphone-screen-mobile@1x.png" class="information__picture" width="157" height="230">
+                <img src="img/iphone-screen-mobile@1x.png" class="information__picture" width="157" height="230">
+                <img src="img/iphone-screen-mobile@1x.png" class="information__picture" width="157" height="230">
             </div>
-            <div class="reviews-slide-2"></div>
-            <div class="reviews-slide-3"></div>
+            <div class="information__features">
+                <div class="information__feature">
+                    <h3>Поднимает настроение</h3>
+                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </div>
+                <div class="information__feature">
+                    <h3>Меняет мир вокруг</h3>
+                    <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </div>
+                <div class="information__feature">
+                    <h3>Заводит новых друзей</h3>
+                    <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="prices container">
-        <div class="prices__slider">
-            <div class="prices-slide-1"></div>
-            <div class="prices-slide-2">
-                <header class="prices-slide-header">
-                    <h4>Стандарт</h4>
-                    <span>3,99 USD</span>
-                </header>
-                <ul class="prices-slide-list">
+    <section class="research container">
+        <img src="http://placehold.it/300x350" width="300" height="350" alt="24 часа">
+        <div class="research__descr">
+            <h2>Эффект <br> на 24 часа!</h2>
+            <p>Британские ученые провели исследования и доказали, что положительный эффект <br> от использования приложения длится целые сутки!</p>
+            <a href="#">Узнать больше об исследовании</a>
+        </div>
+    </section>
+    <section class="reviews-slider container">
+        <div class="reviews-slider__item">
+            <span>25 лет, водитель трамвая</span>
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="reviews-slider__item"></div>
+        <div class="reviews-slider__item"></div>
+    </section>
+    <section class="prices-slider container">
+            <div class="prices-slider__options">
+                <ul class="prices-slider__list clear-ul">
                     <li>Розовый фильтр</li>
                     <li>Смайлики</li>
                     <li>Комментарии</li>
                 </ul>
             </div>
-            <div class="prices-slide-3"></div>
-        </div>
+            <div class="prices-slider__item prices-slider__base">
+                <div class="prices-slider__header">
+                    <h4>База</h4>
+                    <span>1,99 USD</span>
+                </div>
+                <ul class="prices-slider__list clear-ul">
+                    <li class="prices-slider__list--checked">Розовый фильтр</li>
+                    <li>Смайлики</li>
+                    <li>Комментарии</li>
+                </ul>
+            </div>
+            <div class="prices-slider__item prices-slider__standart prices-slider--bestseller">
+                <div class="prices-slider__header">
+                    <h4>Стандарт</h4>
+                    <span>3,99 USD</span>
+                </div>
+                <ul class="prices-slider__list clear-ul">
+                    <li class="prices-slider__list--checked">Розовый фильтр</li>
+                    <li class="prices-slider__list--checked">Смайлики</li>
+                    <li>Комментарии</li>
+                </ul>
+            </div>
+            <div class="prices-slider__item prices-slider__unlimited">
+                <div class="prices-slider__header">
+                    <h4>Анлим</h4>
+                    <span>9,99 USD</span>
+                </div>
+                <ul class="prices-slider__list clear-ul">
+                    <li class="prices-slider__list--checked">Розовый фильтр</li>
+                    <li class="prices-slider__list--checked">Смайлики</li>
+                    <li class="prices-slider__list--checked">Комментарии</li>
+                </ul>
+            </div>
     </section>
     <section class="contacts container">
         <h2>Остались вопросы? Свяжитесь с нами!</h2>
-        <h4>Звоните:</h4>
-        <a href="tel:+78125550555">+7 (812) 555-66-66</a>
-        <h4>Пишите:</h4>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <h4>Приезжайте в гости:</h4>
-        <a>ул. Большая Конюшенная, 19/8</a>
+        <div class="contacts__items">
+            <div class="contacts__tel contacts__item">
+                <h4>Звоните:</h4>
+                <a href="tel:+78125550555">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__email contacts__item">
+                <h4>Пишите:</h4>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__adress contacts__item">
+                <h4>Приезжайте в гости:</h4>
+                <a>ул. Большая Конюшенная, 19/8</a>
+            </div>
+        </div>
     </section>
     <section class="map">
     </section>
+    <footer class="page-footer container">
+        <img src="http://placehold.it/30x30" alt="" class="page-footer__logo">
+        <ul class="page-footer__social">
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Youtube</li>
+        </ul>
+        <div class="page-footer__copyright">
+            <span>Разработано</span>
+            <img src="http://placehold.it/30x30" alt="">
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
