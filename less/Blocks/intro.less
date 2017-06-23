@@ -9,6 +9,7 @@
 
 .intro__picture {
     margin-top: 110px;
+    margin-bottom: -6px;
 }
 
 
@@ -16,11 +17,17 @@
 
 @media (min-width: 660px) {
     .intro {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+        display: block;
+        position: relative;
+        padding-top: 75px;
+        margin-bottom: -7px;
     }
 }
 
 @media (min-width: 960px) {
-    
+    .intro__picture img {
+        margin-top: 27px;
+        margin-left: 26px;
+        max-width: none;
+    }
 }
