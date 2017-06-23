@@ -1,71 +1,54 @@
 "use strict";
 
 module.exports = function(grunt) {
-  
-    
-  require("load-grunt-tasks")(grunt);
+  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks("grunt-browser-sync");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-csso");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-svgstore");
+  grunt.loadNpmTasks("grunt-svgmin");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-contrib-clean");
+
+
 
   grunt.initConfig({
-      
-    copy: {
-        build: {
-            files: [{
-                expand: true,
-                src: [
-                    "fonts/**/*.{woff,woff2}",
-                    "img/**",
-                    "js/**",
-                    "*.html" 
-                ],
-                dest: "build"
-            }]
-        },
-        html: {
-            files: [{
-                expand: true,
-                src: ["*.html"],
-                dest: "build"
-            }]
-        }
-    },
-      
     clean: {
       build: ["build"]
     },
-    
-      
+
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      }
+    },
+
     less: {
       style: {
         files: {
-          "build/css/style.css": ["less/style.less"]
+          "build/css/style.css": "less/style.less"
         }
       }
     },
-      
-    csso: {
-          style: {
-              options: {
-                  report: "gzip"
-              },
-              files: {
-                  "build/css/style.min.css": ["css/style.css"]
-              }
-          }
-      },
-      
-    imagemin: {
-          images: {
-              options: {
-                  optimizationLevel: 3,
-                  progressive: true 
-              },
-              files: [{
-                  expand: true,
-                  src: ["build/img/**/*.{png,jpg,gif}"] 
-              }]
-          }
-      },
-      
+
     postcss: {
       style: {
         options: {
@@ -73,7 +56,8 @@ module.exports = function(grunt) {
             require("autoprefixer")({browsers: [
               "last 2 versions"
             ]}),
-            require("css-mqpacker")({sort: true})
+            require("css-mqpacker")({
+              sort: true })
           ]
         },
         src: "build/css/*.css"
@@ -101,24 +85,72 @@ module.exports = function(grunt) {
 
     watch: {
       html: {
-          files: ["*.html"],
-          tasks: ["copy:html"]
+        files: ["*.html"],
+        tasks: ["copy:html"]
       },
       style: {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
       }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+          },
+          files: {
+            "build/css/style.min.css": ["build/css/style.css"]
+          }
+        }
+      },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["build/img/icons/*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/icons/*.svg"]
+        }]
+      }
     }
+
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-    
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("build", [
     "clean",
-    "copy",  
+    "copy",
     "less",
     "postcss",
     "csso",
+    "symbols",
     "imagemin"
-  ]);
+  ])
 };
