@@ -9,12 +9,17 @@
 
 @media (min-width: 660px) {
     .research {
+        background: #f2f2f2;
+        display: block;
+        margin-bottom: 48px;
+    }
+    .research__wrapper {
+        position: relative;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
         display: -o-flex;
         display: flex;
-        margin-bottom: 48px;
         &:after {
             position: absolute;
             content: "";
@@ -79,12 +84,10 @@
 
 @media (min-width: 960px) {
     .research {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
+        background: none;
         margin-bottom: 48px;
+    }
+    .research__wrapper {
         &:after {
             position: absolute;
             content: "";
