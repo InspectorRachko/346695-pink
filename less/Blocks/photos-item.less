@@ -3,7 +3,7 @@
 }
 
 .photos-item--photo-of-the-day img {
-    width: 100%;
+    width: 320px;
 }
 
 .photos-item img {
@@ -85,8 +85,14 @@
 /* ---MEDIA--- */
 
 @media (min-width: 660px) {
+    
     .photos-item img {
         width: 300px;
+        margin: 0 auto;
+    }
+    .photos-item--photo-of-the-day img {
+        width: 660px;
+        height: 512px;
     }
     .photos-item--photo-of-the-day {
         &:after {
@@ -129,10 +135,7 @@
         margin-bottom: 50px;
         margin-right: 0;
     }
-    .photos-item--photo-of-the-day img {
-        width: 100%;
-        margin: 0;
-    }
+
     .photos-item .photos-item__like {
         position: absolute;
         display: inline-block;
@@ -148,6 +151,10 @@
 }
 
 @media (min-width: 960px) {
+    .photos-item--photo-of-the-day img {
+        width: 960px;
+        max-height: 504px;
+    }
     .photos-item--photo-of-the-day {
         &:after {
             top: 55px;
