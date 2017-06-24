@@ -1,0 +1,105 @@
+.store-block {
+  width: 100%;
+  min-height: 270px;
+  background-color: rgb(29, 38, 49);
+    &__wrapper {
+      width: 280px;
+      padding: 28px 20px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+    h2  {
+      display: none;
+    }
+    &__icons {
+      .list-none();
+      margin: 0;
+      padding: 37px 0;
+      padding-bottom: 18px;
+    }
+    &__icon {
+      display: inline-block;
+      width: 47px;
+      height: 56px;
+
+
+      font-size: 0;
+      text-decoration: none;
+
+      cursor: pointer;
+
+      margin: 0 16px;
+    }
+    &__icon:nth-child(1) {
+      // width: 47px;
+      // height: 56px;
+
+      background: url(../img/logo-apple.svg) no-repeat center;
+    }
+    &__icon:nth-child(2) {
+      // width: 43px;
+      // height: 49px;
+
+      background: url(../img/logo-android.svg) no-repeat center;
+    }
+    &__icon:nth-child(3) {
+      // width: 44px;
+      // height: 41px;
+
+      background: url(../img/logo-microsoft.svg) no-repeat center;
+    }
+    p {
+      margin: 0;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+}
+@media (min-width: 660px) {
+  .store-block {
+    width: 295px;
+    height: 310px;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+    padding: 0;
+
+    background: rgba(255, 255, 255, 0);
+    &__icons {
+      margin: 0;
+      padding: 0;
+      padding-top: 45px;
+      padding-bottom: 35px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+    &__wrapper {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 960px) {
+  .store-block {
+    width: 300px;
+    height: 310px;
+    margin: 20px 0;
+    &__icons {
+      margin: 22px 0;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+  }
+}
