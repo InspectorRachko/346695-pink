@@ -1,5 +1,5 @@
 {
-  "description": "Личный проект «Пинк» от HTML Academy Дмитрий Трисс",
+  "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.7.x",

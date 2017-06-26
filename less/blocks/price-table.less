@@ -15,42 +15,42 @@
 
       text-transform: uppercase;
       background-color: @color-p;
-        b {
-          font-size: 18px;
-          line-height: 30px;
-          font-weight: 700;
-        }
-        span {
-          font-size: 24px;
-          line-height: 30px;
-          font-weight: 300;
-        }
+      b {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+      }
       border: 2px solid #e5e5e5;
     }
     &__title--hit {
       position: relative;
     }
-  &__title--hit::before {
-    position: absolute;
-    top: 0;
-    left: 0;
+    &__title--hit::before {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-    content: "";
-    width: 74px;
-    height: 72px;
+      content: "";
+      width: 74px;
+      height: 72px;
 
-    background: url(../img/bg-hit.svg) no-repeat center;
-  }
-  &__title--hit::after {
-    position: absolute;
-    top: 16px;
-    left: 11px;
-    display: block;
-    content: "ХИТ";
-    font-size: 14px;
+      background: url(../img/bg-hit.svg) no-repeat center;
+    }
+    &__title--hit::after {
+      position: absolute;
+      top: 16px;
+      left: 11px;
+      display: block;
+      content: "ХИТ";
+      font-size: 14px;
 
-    transform: rotate(-45deg);
-  }
+      transform: rotate(-45deg);
+    }
     &__title:first-child {
       border: none;
       background-color: rgba(255, 255, 255, 0);
@@ -111,7 +111,6 @@
       display: none;
     }
   }
-
 }
 @media (min-width: 660px) {
   .price-table {
@@ -143,56 +142,56 @@
 
       background: url(../img/bg-hit-tablet.svg) no-repeat center;
     }
-  th {
-    width: 153px;
-  }
-  &__description {
-    width: 153px;
-    padding: 7px 0;
-    padding-left: 15px;
-
-    color: @color-p;
-
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-
-    background-color: #ffffff;
-
-    text-transform: none;
-    &-on {
-      position: relative;
-      font-size: 0;
+    th {
+      width: 153px;
     }
-    &-on::after {
-      position: absolute;
-      top: 5px;
-      left: 45px;
-      display: block;
-      content: "";
-      width: 30px;
-      height: 20px;
+    &__description {
+      width: 153px;
+      padding: 7px 0;
+      padding-left: 15px;
 
-      background: url(../img/icon-yes.svg) no-repeat center;
-      background-size: contain;
-    }
-    &-off {
-      position: relative;
-      font-size: 0;
-    }
-    &-off::after {
-      position: absolute;
-      top: 5px;
-      left: 45px;
-      display: block;
-      content: "";
-      width: 31px;
-      height: 22px;
+      color: @color-p;
 
-      background: url(../img/icon-no.svg) no-repeat center;
-      background-size: contain;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+
+      background-color: #ffffff;
+
+      text-transform: none;
+      &-on {
+        position: relative;
+        font-size: 0;
+      }
+      &-on::after {
+        position: absolute;
+        top: 5px;
+        left: 45px;
+        display: block;
+        content: "";
+        width: 30px;
+        height: 20px;
+
+        background: url(../img/icon-yes.svg) no-repeat center;
+        background-size: contain;
+      }
+      &-off {
+        position: relative;
+        font-size: 0;
+      }
+      &-off::after {
+        position: absolute;
+        top: 5px;
+        left: 45px;
+        display: block;
+        content: "";
+        width: 31px;
+        height: 22px;
+
+        background: url(../img/icon-no.svg) no-repeat center;
+        background-size: contain;
+      }
     }
-  }
   }
 }
 
@@ -201,32 +200,32 @@
     margin: 0 auto;
     transform: none;
     width: auto;
-      &__title {
-        padding: 20px 0;
+    &__title {
+      padding: 20px 0;
 
-        b  {
-          font-size: 18px;
-          line-height: 30px;
-        }
-        span {
-          font-size: 24px;
-          line-height: 30px;
-        }
+      b {
+        font-size: 18px;
+        line-height: 30px;
       }
-      &__title--hit {
-        position: relative;
+      span {
+        font-size: 24px;
+        line-height: 30px;
       }
-      &__title--hit::before {
-        position: absolute;
-        top: 0;
-        left: 0;
+    }
+    &__title--hit {
+      position: relative;
+    }
+    &__title--hit::before {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-        content: "";
-        width: 74px;
-        height: 72px;
+      content: "";
+      width: 74px;
+      height: 72px;
 
-        background: url(../img/bg-hit.svg) no-repeat center;
-      }
+      background: url(../img/bg-hit.svg) no-repeat center;
+    }
     th {
       width: 232px;
     }
@@ -244,38 +243,38 @@
       background-color: #ffffff;
 
       text-transform: none;
-        &-on {
-          position: relative;
-          font-size: 0;
-        }
-        &-on::after {
-          position: absolute;
-          top: 7px;
-          left: 83px;
-          display: block;
-          content: "";
-          width: 30px;
-          height: 20px;
-
-          background: url(../img/icon-yes.svg) no-repeat center;
-          background-size: contain;
-        }
-        &-off {
-          position: relative;
-          font-size: 0;
-        }
-        &-off::after {
-          position: absolute;
-          top: 1px;
-          left: 81px;
-          display: block;
-          content: "";
-          width: 31px;
-          height: 22px;
-
-          background: url(../img/icon-no.svg) no-repeat center;
-          background-size: contain;
-        }
+      &-on {
+        position: relative;
+        font-size: 0;
       }
+      &-on::after {
+        position: absolute;
+        top: 7px;
+        left: 83px;
+        display: block;
+        content: "";
+        width: 30px;
+        height: 20px;
+
+        background: url(../img/icon-yes.svg) no-repeat center;
+        background-size: contain;
+      }
+      &-off {
+        position: relative;
+        font-size: 0;
+      }
+      &-off::after {
+        position: absolute;
+        top: 1px;
+        left: 81px;
+        display: block;
+        content: "";
+        width: 31px;
+        height: 22px;
+
+        background: url(../img/icon-no.svg) no-repeat center;
+        background-size: contain;
+      }
+    }
   }
 }

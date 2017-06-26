@@ -166,7 +166,6 @@
       display: block;
       box-sizing: border-box;
       width: 100%;
-
       padding: 15px 20px;
 
       color: @color-p;
@@ -476,7 +475,7 @@
         top: 11px;
         right: 2px;
 
-        width: 60px;
+        width: 62px;
         height: 60px;
 
         background: #e2e2e2 url(../img/icon-phone.svg) no-repeat center;
@@ -487,7 +486,7 @@
           top: 11px;
           right: 2px;
 
-          width: 60px;
+          width: 62px;
           height: 60px;
 
           background: #e2e2e2 url(../img/icon-mail.svg) no-repeat center;
@@ -592,12 +591,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-        span {
-          display: block;
-          width: 320px;
-          padding: 15px 0;
-          text-align: right;
-        }
+      span {
+        display: block;
+        width: 320px;
+        padding: 15px 0;
+        text-align: right;
+      }
     }
   }
 }
@@ -696,21 +695,21 @@
       background-color: #ffffff;
 
       border: 2px solid #e5e5e5;
-        h2 {
-          position: absolute;
-          top: -15px;
-          left: 345px;
+      h2 {
+        position: absolute;
+        top: -15px;
+        left: 345px;
 
-          margin: 0;
-          padding: 0 25px;
+        margin: 0;
+        padding: 0 25px;
 
-          font-size: 14px;
-          line-height: 30px;
-          font-weight: 400;
-          text-transform: uppercase;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
 
-          background-color: #ffffff;
-        }
+        background-color: #ffffff;
+      }
       &-wrapper {
         display: flex;
         flex-direction: row;
@@ -734,17 +733,18 @@
         }
         input {
           margin: 0;
+          height: 60px;
           padding: 15px 20px;
         }
       }
       &-icon-phone::before {
-        top: 2px;
-        right: 2px;
+        top: 0px;
+        right: 0px;
         }
-        &-icon-mail::before {
-          top: 2px;
-          right: 2px;
-        }
+      &-icon-mail::before {
+        top: 0px;
+        right: 0px;
+      }
     }
     &__wrapper-achievements {
       order: 4;
@@ -803,6 +803,7 @@
       }
       &-field {
         max-width: 260px;
+        width: 100%;
         box-sizing: border-box;
         padding: 0;
       }

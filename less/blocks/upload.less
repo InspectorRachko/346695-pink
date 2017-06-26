@@ -9,6 +9,7 @@
   }
   &-wrapper {
     width: 280px;
+    min-height: 755px;
     padding: 0 20px;
     margin: 0 auto;
   }
@@ -80,11 +81,11 @@
   }
   &__filter-item-wrapper {
     position: relative;
-    width: 80px;
+    width: 83px;
   }
   &__scale-block {
     position: absolute;
-    top: 80px;
+    top: 84px;
   }
   &__scale-block--crop {
     display: block;
@@ -97,9 +98,10 @@
   }
   &__scale {
     position: relative;
-    width: 200px;
+    width: 240px;
     height: 2px;
     margin: 0 auto;
+    margin-left: 5px;
 
     background: #283645;
   }
@@ -134,6 +136,7 @@
   .upload {
     &-wrapper {
       width: 620px;
+      min-height: 500px;
       padding: 0 20px;
       margin: 0 auto;
     }
@@ -211,7 +214,7 @@
     &__scale-block {
       position: absolute;
       top: 10px;
-      left: 55px;
+      left: 50px;
 
       width: 200px;
       margin: 0;
@@ -219,12 +222,24 @@
     }
     &__scale-block--crop {
       display: block;
+      .upload__range-toggle {
+        right: 40px;
+      }
     }
     &__scale-block--fill {
       display: block;
+      .upload__range-toggle {
+        right: 160px;
+      }
     }
     &__scale-block--contrast {
       display: block;
+      .upload__range-toggle {
+        right: 90px;
+      }
+    }
+    &__scale {
+      width: 200px;
     }
     &__btn-block {
       margin: 0;
@@ -234,6 +249,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-start;
     }
   }
 }
@@ -282,18 +298,21 @@
       }
     }
     &__filter-icon--crop {
+      padding-bottom: 10px;
       svg {
         width: 48px;
         height: 48px;
       }
     }
     &__filter-icon--fill {
+      padding-bottom: 5px;
       svg {
         width: 48px;
         height: 48px;
       }
     }
     &__filter-icon--contrast {
+      padding-bottom: 13px;
       svg {
         width: 32px;
         height: 32px;
@@ -333,12 +352,21 @@
     }
     &__scale-block--crop {
       display: block;
+      .upload__range-toggle {
+        right: 205px;
+      }
     }
     &__scale-block--fill {
       display: block;
+      .upload__range-toggle {
+        right: 25px;
+      }
     }
     &__scale-block--contrast {
       display: block;
+      .upload__range-toggle {
+        right: 115px;
+      }
     }
     &__btn-block {
       width: 410px;
