@@ -41,18 +41,35 @@
     min-height: 66px;
 
     display: inline-block;
+    position: relative;
     box-sizing: border-box;
     padding-top: 20px;
 
     line-height: 0;
+      
+    &:hover:after {
+        position: absolute;
+        content: "";
+        width: 82px;
+        height: 23px;
+        background: url(../img/logo-pink-hover-mobile.svg) no-repeat;
+        top: 20px;
+        left: 0.3px;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+    &:active:after {
+        position: absolute;
+        content: "";
+        width: 79px;
+        height: 23px;
+        background: url(../img/img/logo-pink-white-mobile.svg) no-repeat;
+        top: 28px;
+        left: 0;
+    }
+}
 
-    &-tablet {
-      display: none;
-    }
-    &-desktop {
-      display: none;
-    }
-  }
   &__logo:hover path {
     fill: #d22856;
   }
@@ -70,6 +87,7 @@
       display: none;
     }
   }
+
   &__title--inner {
     padding: 30px 10px;
     margin: 0 auto;
@@ -86,7 +104,7 @@
       font-weight: 300;
     }
   }
-}
+ }
 .page-header__menu-toggle {
   position: absolute;
   top: 20px;
@@ -258,12 +276,27 @@
       min-height: 110px;
       padding: 0;
       padding-top: 28px;
-      &-mobile {
-        display: none;
-      }
-      &-tablet {
-        display: block;
-      }
+        
+      &:hover:after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 45px;
+            background: url(../img/logo-pink-hover-tablet.svg) no-repeat;
+            top: 28px;
+            left: 0;
+        }
+      &:active {
+            opacity: 0.3;
+        }
+      &:active:after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            background: url(../img/logo-pink-white-tablet.svg) no-repeat;
+            top: 28px;
+            left: 0;
+        }
     }
     &__title-wrapper {
       width: 620px;
@@ -412,15 +445,27 @@
       padding: 0;
 
       border: none;
-      &-mobile {
-        display: none;
-      }
-      &-tablet {
-        display: none;
-      }
-      &-desktop {
-        display: block;
-      }
+        
+      &:hover:after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 45px;
+            background: url(../img/logo-pink-hover-desktop.svg) no-repeat;
+            top: 28px;
+            left: 0;
+        }
+      &:active {
+            opacity: 0.3;
+        }
+      &:active:after {
+            position: absolute;
+            content: "";
+            width: 150px;
+            background: url(../img/logo-pink-white-desktop.svg) no-repeat;
+            top: 28px;
+            left: 0;
+        }
     }
     &__title-wrapper {
       width: 940px;
