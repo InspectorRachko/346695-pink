@@ -1,0 +1,140 @@
+.contacts {
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 0px;
+    margin-top: 42px;
+    padding-bottom: 0;
+}
+
+.contacts h2 {
+    text-align: center;
+    width: 222px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.contacts__items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__adress {
+    margin-top: 8.5px;
+}
+
+.contacts__item h4 {
+    text-align: center;
+    color: @color-regular;
+    margin: 0;
+}
+
+.contacts__item a {
+    display: block;
+    text-align: center;
+    color: @color-pink;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 22px;
+    &:hover {
+        color: #283645;
+    }
+    &:active {
+        color: #ced0d2;
+        text-decoration: none;
+    }
+}
+
+.contacts__email a {
+    margin-top: 3px;
+    margin-bottom: 17px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contacts__adress a {
+    line-height: 30px;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .contacts {
+        margin-top: 46px;
+    }
+    .contacts__items {
+        margin-top: 42px;
+    }
+    .contacts h2 {
+        width: 370px;
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .contacts h4 {
+        margin-bottom: 6px;
+    }
+    .contacts__item {
+        width: 300px;
+    }
+    .contacts__items {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contacts__adress {
+        display: inline-block;
+        width: 215px;
+        margin: 0 auto;
+        margin-top: 26px;
+    }
+    .contacts__adress h4 {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .contacts {
+        padding-top: 16px;
+    }
+    .contacts h2 {
+        font-size: 50px;
+        line-height: 57px;
+        width: 465px;
+        margin: 0 auto;
+    }
+    .contacts__item {
+        width: 280px;
+    }
+    .contacts__items {
+        margin-top: 59px;
+        justify-content: space-around;
+    }
+    .contacts__item a {
+        margin-top: 23px;
+    }
+    .contacts__email {
+        order: 3;
+    }
+    .contacts__adress {
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .contacts__adress a {
+        line-height: 28px;
+    }
+}

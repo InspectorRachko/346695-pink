@@ -1,0 +1,218 @@
+.information {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    color: @font-regular;
+    z-index: 1;
+}
+
+.information__decoration {
+    position: absolute;
+    z-index: -1;
+    top: 212px;
+    width: 668px
+}
+
+.information__slogan {
+    background: white;
+    padding-top: 39px;
+}
+
+.information__slogan b {
+    display: block;
+    width: 205px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    color: @font-regular;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+
+.information__items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 93px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.information__feature {
+    margin-bottom: 41px;
+}
+
+.information__feature h3 {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.information__feature p {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 17px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.information__feature br {
+    display: none;
+}
+
+.information__pictures img:nth-child(1),
+.information__pictures img:nth-child(2),
+{
+    display: none;
+}
+
+.information__pictures img:nth-child(3) {
+    margin-left: 82px;
+    overflow: hidden;
+}
+
+.information__picture--3 {
+    max-height: 100px;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .information__decoration {
+        top: 217px;
+        right: 0px;
+        width: 1518px;
+    }
+    .information__items {
+        display: block;
+        padding-top: 27px;
+        padding-left: 38px;
+    }
+    .information__slogan b {
+        font-size: 40px;
+    }
+    .information__slogan {
+        padding-top: 57px;
+    }
+    .information__slogan b:first-child {
+        width: 595px;
+        margin-bottom: 12px;
+    }
+    .information__slogan b:last-child {
+        width: 335px;
+        line-height: 46px;
+    }
+    .information__features {
+        width: 250px;
+        display: inline-block;
+        margin-left: 36.5px;
+        vertical-align: top;
+        margin-top: 78px;
+    }
+    .information__feature {
+        margin-bottom: 42px;
+    }
+    .information__feature br {
+        display: block;
+    }
+    .information__feature h3 {
+        color: black;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .information__feature p {
+        width: 310px;
+        margin-top: 19px;
+        text-align: left;
+    }
+    .information__pictures {
+        display: inline-block;
+    }
+    .information__pictures img:nth-child(3) {
+        margin-left: 11px;
+    }
+}
+
+@media (min-width: 960px) {
+    .information__decoration {
+        top: 314px;
+        right: 9px;
+        width: 2518px;
+    }
+    .information__slogan {
+        padding-top: 82px;
+    }
+    .information__slogan b {
+        font-size: 50px;
+    }
+    .information__slogan b:first-child {
+        width: 735px;
+    }
+    .information__slogan b:last-child {
+        width: 430px;
+        line-height: 62px;
+        padding-bottom: 50px;
+    }
+    .information__items {
+        padding-top: 0;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    .information__pictures img:nth-child(1),
+    .information__pictures img:nth-child(2),
+    {
+        display: block;
+    }
+    .information__pictures img:nth-child(3) {
+        margin-left: 0px;
+    }
+    .information__pictures {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+    }
+    .information__features {
+        width: auto;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 54px;
+        margin-left: 0;
+    }
+    .information__feature h3 {
+        width: 230px;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .information__feature p {
+        width: 249px;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 27px;
+    }
+    .information__feature br {
+        display: none;
+    }
+}

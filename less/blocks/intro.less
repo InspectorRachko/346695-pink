@@ -1,0 +1,33 @@
+.intro {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__picture {
+    margin-top: 110px;
+    margin-bottom: -6px;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .intro {
+        display: block;
+        position: relative;
+        padding-top: 75px;
+        margin-bottom: -7px;
+    }
+}
+
+@media (min-width: 960px) {
+    .intro__picture img {
+        margin-top: 27px;
+        margin-left: 26px;
+        max-width: none;
+    }
+}

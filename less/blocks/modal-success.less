@@ -1,0 +1,109 @@
+.modal-success {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 380px;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 14px 1px;
+}
+
+.modal-success--opened {
+    display: block;
+}
+
+.modal-success__text {
+    height: 217px;
+    background-color: white;
+}
+
+.modal-success__text h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 48px;
+}
+
+.modal-success__text p {
+    width: 267px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.modal-success__close {
+    width: 280px;
+    height: 63px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2aab6d;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    &:hover {
+        background-color: #1c9b5e;
+    }
+    &:active {
+        color: #7dbd99;
+    }
+}
+
+@media (min-width: 660px) {
+    .modal-success {
+        width: 460px;
+        height: 430px;
+    }
+    .modal-success__text {
+        padding-bottom: 43px;
+    }
+    .modal-success__text h4 {
+        width: 212px;
+        font-size: 30px;
+        line-height: 33px;
+        margin: 0 auto;
+    }
+    .modal-success__text p {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .modal-success__close {
+        width: 300px;
+    }
+}
+
+@media (min-width: 960px) {
+    .modal-success {
+        width: 780px;
+        height: 377px;
+    }
+    .modal-success__text {
+        padding-bottom: 43px;
+    }
+    .modal-success__text h4 {
+        width: 400px;
+    }
+    .modal-success__text p {
+        width: 380px;
+        margin-top: 45px;
+    }
+    .modal-success__close {
+        width: 460px;
+        margin-top: 25px;
+    }    
+}

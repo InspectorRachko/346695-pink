@@ -1,0 +1,744 @@
+.contest-form__description {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 45px;
+}
+
+.contest-form__description--2 {
+    display: none;
+}
+
+.contest-form__name {
+    border: none;
+    padding-top: 36px;
+}
+
+.contest-form__name label {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 28px;
+    margin-bottom: 4px;
+}
+
+.contest-form__name input {
+    width: 280px;
+    height: 65px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 30px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-bottom: 16px;
+    padding-left: 21px;
+}
+
+.contest-form__achievments {
+    margin-top: -63px;
+}
+
+.contest-form__achievments legend {
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 113px;
+    padding-bottom: 38px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 45px;
+    margin-bottom: 52px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:hover {
+    opacity: 1;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -23px;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background: white;
+}
+
+input[type="checkbox"]+label:hover::before {
+    border: 2px solid #283645;
+}
+
+input[type="checkbox"]+label:active::before {
+    border: 2px solid @color-pink;
+}
+
+input[type="checkbox"]:checked+label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -23px;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: white;
+    background: white url("../img/icon-checked.svg") center no-repeat;
+}
+
+input[type="checkbox"]:checked+label:hover::before {
+    border: 2px solid #283645;
+}
+
+input[type="checkbox"]:checked+label:active::before {
+    border: 2px solid @color-pink;
+}
+
+.contest-form__name .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__achievments {
+    background-color: @bg-grey;
+    font-size: 18px;
+    border: none;
+    padding-bottom: 0;
+}
+
+.contest-form__achievments .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__achievments label {
+    margin-left: 30px;
+}
+
+.contest-form__achievments legend {
+    margin-left: 30px;
+}
+
+.contest-form__tel-n-mail {
+    border: none;
+    margin-top: 23px;
+}
+
+.contest-form__tel-n-mail label {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 28px;
+    margin-bottom: 4px;
+}
+
+.contest-form__tel-n-mail input {
+    width: 280px;
+    height: 65px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 30px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    margin-left: 5px;
+    margin-bottom: 16px;
+    padding-left: 21px;
+}
+
+.contest-form__tel-n-mail .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__tel-n-mail legend {
+    display: none;
+}
+
+.contest-form__platform {
+    background-color: @bg-grey;
+    font-size: 18px;
+    border: none;
+    margin-top: -97px;
+    padding-bottom: 0px;
+}
+
+.contest-form__platform legend {
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 147px;
+    padding-bottom: 34px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 75px;
+    margin-bottom: 46px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]+label:hover {
+    opacity: 1;
+}
+
+input[type="radio"]+label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    background: white;
+}
+
+input[type="radio"]+label:hover:before {
+    border: 2px solid #283645;
+}
+
+input[type="radio"]+label:active:before {
+    border: 2px solid @color-pink;
+}
+
+input[type="radio"]:checked+label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    width: 39px;
+    height: 39px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    border-radius: 30px;
+    background: white;
+}
+
+input[type="radio"]:checked+label:hover:before {
+    border: 2px solid #283645;
+}
+
+input[type="radio"]:checked+label:active:before {
+    border: 2px solid @color-pink;
+}
+
+input[type="radio"]:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 6.5px;
+    left: 16px;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    border: 8px solid #d22856;
+    border-radius: 30px;
+    background: white;
+}
+
+.contest-form__platform .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__coolstory {
+    margin-top: 34px;
+    border: none;
+}
+
+.contest-form__coolstory legend {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contest-form__coolstory textarea {
+    width: 281px;
+    height: 201px;
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    resize: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding-top: 16px;
+    padding-left: 20px;
+    line-height: 29px;
+}
+
+.contest-form__coolstory .flexbug {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-form__bottom {
+    margin-top: 27px;
+    margin-left: 19px;
+    margin-bottom: 16px;
+}
+
+.contest-form__submit {
+    width: 280px;
+    height: 63px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #2aab6d;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    &:hover {
+        background-color: #1c9b5e;
+    }
+    &:active {
+        color: #7dbd99;
+    }
+}
+
+.contest-form__footnote {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 37px;
+    margin-left: 49px;
+}
+
+.contest-form__footnote span:first-of-type {
+    color: #d22856;
+}
+
+.contest-form__footnote span:last-of-type {
+    display: none;
+}
+
+.contest-form__name input:hover,
+.contest-form__tel-n-mail input:hover,
+textarea:hover {
+    border-color: #283645;
+}
+
+.contest-form__name input:focus,
+.contest-form__tel-n-mail input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d22856;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .contest-form {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+    }
+    .contest-form__description {
+        order: 1;
+        width: 495px;
+        font-size: 18px;
+        flex-shrink: 30px;
+        margin-top: 48px;
+    }
+    .contest-form__description--2 {
+        order: 2;
+        display: block;
+        margin-top: -45px;
+    }
+    .contest-form__name {
+        order: 3;
+        padding-top: 70px;
+        margin-bottom: 10px;
+    }
+    .contest-form__name .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__name label {
+        font-size: 14px;
+        line-height: 66px;
+        text-transform: uppercase;
+        margin-left: 7px;
+        margin-right: 13px;
+    }
+    .contest-form__name input {
+        width: 564px;
+        margin-bottom: 50px;
+    }
+    .contest-form__name input:first-of-type,
+    .contest-form__name input:last-of-type {
+        width: 526px;
+    }
+    .contest-form__platform {
+        order: 4;
+        border: 2px solid #e5e5e5;
+        background-color: transparent;
+        margin-top: -17px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 54px;
+    }
+    .contest-form__platform legend {
+        width: 370px;
+        padding: 0;
+        margin: 0;
+    }
+    input[type="radio"]+label {
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 42px;
+        margin-left: 30px;
+        margin-bottom: 4px;
+        position: relative;
+        cursor: pointer;
+    }
+    input[type="radio"]+label::before {
+        left: 17px;
+    }
+    input[type="radio"]:checked+label::before {
+        left: 17px;
+    }
+    input[type="radio"]:checked+label::after {
+        left: 29px;
+    }
+    .contest-form__tel-n-mail {
+        order: 5;
+        border: 2px solid #e5e5e5;
+        margin-top: 53px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 32px;
+        padding-bottom: 0px;
+    }
+    .contest-form__tel-n-mail legend {
+        width: 262px;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .contest-form__tel-n-mail input {
+        width: 500px;
+        margin-left: 45px;
+        margin-bottom: 9px;
+         :last-of-type {
+            margin-top: 25px;
+        }
+    }
+    .contest-form__tel-n-mail .flexbug {
+        flex-direction: column;
+    }
+    .contest-form__tel-n-mail input:first-of-type {
+        order: -1;
+    }
+    .contest-form__tel-n-mail label:first-of-type {
+        order: 0;
+    }
+    .contest-form__tel-n-mail input:last-of-type {
+        order: 1;
+    }
+    .contest-form__tel-n-mail label:last-of-type {
+        order: 2;
+    }
+    .contest-form__tel-n-mail legend {
+        display: block;
+    }
+    .contest-form__tel-n-mail label {
+        position: relative;
+        margin-left: 65px;
+        margin-bottom: 28px;
+        &:first-of-type {
+            &:after {
+                position: absolute;
+                content: "";
+                width: 63px;
+                height: 63px;
+                right: 48px;
+                bottom: 39px;
+                background: url("../img/icon-phone.svg") center no-repeat;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                width: 61px;
+                height: 60px;
+                right: 51px;
+                bottom: 41px;
+                background: #e5e5e5;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 29px;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 63px;
+                height: 63px;
+                right: 48px;
+                bottom: 39px;
+                background: url("../img/icon-mail.svg") center no-repeat;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                width: 61px;
+                height: 60.5px;
+                right: 51px;
+                bottom: 41px;
+                background: #e5e5e5;
+            }
+        }
+    }
+    .contest-form__achievments {
+        order: 6;
+        background-color: transparent;
+        border: 2px solid #e5e5e5;
+        padding-top: 50px;
+        padding-left: 41px;
+        margin-top: 54px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contest-form__achievments legend {
+        width: 440px;
+        margin: 0;
+        padding: 0;
+    }
+    input[type="checkbox"]+label::before {
+        left: -13px;
+    }
+    input[type="checkbox"]:checked+label::before {
+        left: -13px;
+    }
+    .contest-form__coolstory {
+        order: 7;
+        border: 2px solid #e5e5e5;
+        padding-bottom: 42px;
+        margin-top: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contest-form__coolstory legend {
+        width: 260px;
+    }
+    .contest-form__coolstory textarea {
+        width: 500px;
+        height: 195px;
+        margin-top: 22px;
+        margin-left: 45px;
+    }
+    .contest-form__bottom {
+        order: 8;
+        margin-top: 50px;
+        margin-bottom: 49px;
+    }
+    .contest-form__submit {
+        width: 300px;
+    }
+    .contest-form__footnote {
+        display: inline-block;
+        margin-left: 135px;
+    }
+}
+
+@media (min-width: 960px) {
+    .contest-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__description--1 {
+        width: 760px;
+    }
+    .contest-form__description--2 {
+        display: inline;
+    }
+    .contest-form__name {
+        width: 450px;
+        height: 324px;
+        padding-top: 83px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contest-form__name input {
+        width: 381px;
+    }
+    .contest-form__name input:first-of-type,
+    .contest-form__name input:last-of-type {
+        width: 340px;
+    }
+    .contest-form__platform {
+        width: 408px;
+        height: 300px;
+        margin-top: 69px;
+        margin-left: 61px;
+        margin-right: 0px;
+        padding-bottom: 0;
+    }
+    input[type="radio"]+label {
+        margin-top: 46px;
+        margin-left: 46px;
+        margin-bottom: -2px;
+    }
+    .contest-form__tel-n-mail {
+        width: 940px;
+        height: 141px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 30px;
+    }
+    .contest-form__tel-n-mail .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__tel-n-mail input:first-of-type {
+        order: -1;
+        width: 376px;
+        margin-left: 58px;
+    }
+    .contest-form__tel-n-mail input:last-of-type {
+        order: 0;
+        width: 376px;
+        margin-left: 68px;
+    }
+    .contest-form__tel-n-mail label:first-of-type {
+        order: 1;
+        margin-left: 79px;
+    }
+    .contest-form__tel-n-mail label:last-of-type {
+        order: 2;
+        margin-left: 317px;
+    }
+    .contest-form__tel-n-mail label {
+        position: relative;
+        margin-left: 65px;
+        &:first-of-type {
+            &:after {
+                right: -227px;
+                bottom: 42px;
+            }
+            &:before {
+                right: -225px;
+                bottom: 42px;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 29px;
+            &:after {
+                right: -257px;
+                bottom: 39px;
+            }
+            &:before {
+                right: -254px;
+                bottom: 41px;
+            }
+        }
+    }
+    .contest-form__achievments {
+        margin-top: 57px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 7px;
+        margin-bottom: 53px;
+    }
+    .contest-form__achievments .flexbug {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contest-form__achievments label:nth-child(2) {
+        order: 1;
+        margin-right: 42px;
+    }
+    .contest-form__achievments label:nth-child(4) {
+        order: 4;
+        margin-right: 81px;
+    }
+    .contest-form__achievments label:nth-child(6) {
+        order: 2;
+        margin-right: 38px;
+    }
+    .contest-form__achievments label:nth-child(8) {
+        order: 5;
+        margin-right: 47px;
+    }
+    .contest-form__achievments label:nth-child(10) {
+        order: 3;
+    }
+    .contest-form__achievments label:nth-child(12) {
+        order: 6;
+    }
+    .contest-form__coolstory {
+        width: 940px;
+        margin: 0 auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 37px;
+    }
+    .contest-form__coolstory textarea {
+        width: 820px;
+        height: 127px;
+        margin-top: 19px;
+    }
+    .contest-form__bottom {
+        margin-top: 47px;
+        margin-left: 9px;
+        margin-bottom: 0px;
+    }
+    .contest-form__footnote {
+        font-size: 14px;
+        margin-left: 322px
+    }
+    .contest-form__footnote span:last-of-type {
+        display: inline;
+    }
+}

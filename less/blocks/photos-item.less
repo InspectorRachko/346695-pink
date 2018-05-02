@@ -1,0 +1,183 @@
+.photos-item {
+    margin-bottom: 20px;
+}
+
+.photos-item--photo-of-the-day img {
+    width: 100%;
+}
+
+.photos-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.photos-item__comment {
+    position: relative;
+    width: 280px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 19.5px;
+    padding-left: 18px;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: url(../img/icon-heart.svg) no-repeat;
+        left: 20.4px;
+        bottom: 23px;
+    }
+}
+
+.photos-item--photo-of-the-day {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: "ПАНОРАМА ДНЯ";
+        width: 140px;
+        height: 36px;
+        top: 0;
+        right: 91px;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background: #d22856;
+        box-sizing: border-box;
+        padding-left: 19px;
+        padding-top: 3px;
+    }
+}
+
+.photos-item h3 {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.photos-item span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #acafb3;
+    text-transform: uppercase;
+}
+
+.photos-item p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: -2px;
+    margin-bottom: 6px;
+}
+
+.photos-item .photos-item__like {
+    color: @color-pink;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 31px;
+}
+
+
+/* ---MEDIA--- */
+
+@media (min-width: 660px) {
+    .photos-item img {
+        width: 300px;
+    }
+    .photos-item--photo-of-the-day {
+        &:after {
+            top: 58px;
+            right: 36px;
+        }
+    }
+    .photos-item--photo-of-the-day .photos-item__comment {
+        &:after {
+            left: 579.4px;
+            bottom: 77px;
+        }
+    }
+    .photos-item__comment {
+        &:after {
+            left: 256px;
+            bottom: 26px;
+        }
+    }
+    .photos-item--photo-of-the-day .photos-item__comment {
+        width: 620px;
+        height: 120px;
+        margin: 0 auto;
+        padding-top: 22px;
+        padding-bottom: 26px;
+        padding-left: 29px;
+    }
+    .photos-item__comment {
+        position: relative;
+        width: 300px;
+        height: 155px;
+        font-size: 13px;
+        padding-top: 23px;
+        padding-left: 28px;
+    }
+    .photos-item {
+        margin-right: 20px;
+    }
+    .photos-item--photo-of-the-day {
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .photos-item--photo-of-the-day img {
+        width: 100%;
+        margin: 0;
+    }
+    .photos-item .photos-item__like {
+        position: absolute;
+        display: inline-block;
+        margin-top: auto;
+        bottom: 22px;
+        left: -3px;
+    }
+    .photos-item--photo-of-the-day .photos-item__like {
+        bottom: 0;
+        top: 21px;
+        left: 441px;
+    }
+}
+
+@media (min-width: 960px) {
+    .photos-item--photo-of-the-day {
+        &:after {
+            top: 55px;
+            right: 291px;
+        }
+    }
+    .photos-item--photo-of-the-day .photos-item__comment {
+        &:after {
+            left: 894.4px;
+            bottom: 51px;
+        }
+    }
+    .photos-item {
+        margin: 0;
+    }
+    .photos-item {
+        margin-bottom: 55px;
+        margin-right: 20px;
+    }
+    .photos-item--photo-of-the-day {
+        margin-bottom: 50px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .photos-item--photo-of-the-day .photos-item__comment {
+        width: 940px;
+        height: 95px;
+        padding-left: 28px;
+    }
+    .photos-item--photo-of-the-day .photos-item__like {
+        left: 758px;
+    }
+}
